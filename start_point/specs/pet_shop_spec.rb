@@ -135,20 +135,24 @@ class TestPetShop < Minitest::Test
 
 
 # 9.
-  def test_all_pets_by_breed__not_found
-    pets = pets_by_breed(@pet_shop, "Dalmation")
-    assert_equal(0, pets.count)
-  end
+  # def test_all_pets_by_breed__not_found
+  #   pets = pets_by_breed(@pet_shop, "Dalmation")
+  #   assert_equal(0, pets.count)
+  # end
 
+
+# 10.
   # def test_find_pet_by_name__returns_pet
   #   pet = find_pet_by_name(@pet_shop, "Arthur")
   #   assert_equal("Arthur", pet[:name])
   # end
 
-  # def test_find_pet_by_name__returns_nil
-  #   pet = find_pet_by_name(@pet_shop, "Fred")
-  #   assert_nil(pet)
-  # end
+
+# 11.
+  def test_find_pet_by_name__returns_nil
+    pet = find_pet_by_name(@pet_shop, "Fred")
+    assert_nil(pet)
+  end
 
   # def test_remove_pet_by_name
   #   remove_pet_by_name(@pet_shop, "Arthur")
