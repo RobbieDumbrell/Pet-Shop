@@ -78,3 +78,15 @@ def customer_cash(customer)
   return customer[:cash]
 end
 # Passed!
+
+# 15.
+def remove_customer_cash(customer, cash_amount)
+  customer[:cash] -= cash_amount
+end
+# Passed!
+
+# 16.
+def customer_pet_count(customer)
+  customer[:pets].count
+end
+# Passed!
