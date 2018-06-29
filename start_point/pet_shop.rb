@@ -90,3 +90,21 @@ def customer_pet_count(customer)
   customer[:pets].count
 end
 # Passed!
+
+# 17.
+def add_pet_to_customer(customer, new_pet)
+  customer[:pets] << new_pet
+end
+# Passed!
+
+# OPTIONAL
+
+# 18 and 19.
+def customer_can_afford_pet(customer, pet)
+  if customer[:cash] >= pet[:price]
+    return true
+  else
+    return false
+  end
+end
+# Passed!
