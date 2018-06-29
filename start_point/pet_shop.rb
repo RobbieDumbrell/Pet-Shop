@@ -44,11 +44,24 @@ def pets_by_breed(pet_shop, breed)
 end
 # Passed!
 
-# 10.
+# 10 and 11.
 def find_pet_by_name(pet_shop, name)
   for pet in pet_shop[:pets]
     if pet[:name] == name
       return pet
+    end
+  end
+  if pet == nil
+    return nil
+  end
+end
+# Passed! and Passed!
+
+# 12.
+def remove_pet_by_name(pet_shop, name)
+  for pet in pet_shop[:pets]
+    if pet[:name] == name
+      pet_shop[:pets].delete(pet)
     end
   end
 end
