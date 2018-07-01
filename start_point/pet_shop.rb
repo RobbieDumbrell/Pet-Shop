@@ -40,7 +40,7 @@ def pets_by_breed(pet_shop, breed)
   for pet in pet_shop[:pets]
     pets_of_type_breed << pet[:name] if pet[:breed] == breed
   end
-    return pets_of_type_breed
+  return pets_of_type_breed
 end
 # Passed!
 
@@ -51,9 +51,7 @@ def find_pet_by_name(pet_shop, name)
       return pet
     end
   end
-  if pet == nil
     return nil
-  end
 end
 # Passed! and Passed!
 
